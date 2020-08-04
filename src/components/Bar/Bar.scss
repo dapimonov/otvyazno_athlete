@@ -1,0 +1,36 @@
+.bar-component {
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #ECEBF6;
+    border-radius: 10px;
+
+    .bar-value-area {
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .numbers {
+    width: 100%;
+    margin-top: 4px;
+    position: relative;
+
+    .dynamic-numbers {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      top: 0;
+      z-index: 100;
+    }
+
+    .static-numbers {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #B4B3BD;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
