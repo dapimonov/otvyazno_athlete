@@ -1,0 +1,24 @@
+.header-component {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    .logos-wrapper {
+      display: flex;
+
+      .vertical-line {
+        align-self: stretch;
+        border: 1px solid #D8D8D8;
+        margin: 0 20px;
+      }
+    }
+  }
+
+  hr {
+    margin: 0 0 2px;
+    border: 2px solid;
+  }
+}

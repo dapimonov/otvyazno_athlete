@@ -1,3 +1,61 @@
 .App {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
 
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../../fonts/MuseoSansLight.eot');
+  src: local('Museo Sans Cyrl'),
+  url('../../fonts/MuseoSansLight.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MuseoSansLight.woff') format('woff'),
+  url('../../fonts/MuseoSansLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../../fonts/MuseoSansRegular.eot');
+  src: local('Museo Sans Cyrl'),
+  url('../../fonts/MuseoSansRegular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MuseoSansRegular.woff') format('woff'),
+  url('../../fonts/MuseoSansRegular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../../fonts/MuseoSansMedium.eot');
+  src: local('Museo Sans Cyrl'),
+  url('../../fonts/MuseoSansMedium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MuseoSansMedium.woff') format('woff'),
+  url('../../fonts/MuseoSansMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../../fonts/MuseoSansBold.eot');
+  src: local('Museo Sans Cyrl'),
+  url('../../fonts/MuseoSansBold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MuseoSansBold.woff') format('woff'),
+  url('../../fonts/MuseoSansBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('../../fonts/MuseoSansBlack.eot');
+  src: local('Museo Sans Cyrl'),
+  url('../../fonts/MuseoSansBlack.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/MuseoSansBlack.woff') format('woff'),
+  url('../../fonts/MuseoSansBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
