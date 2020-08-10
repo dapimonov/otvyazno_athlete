@@ -3,6 +3,14 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
+  color: #1E2A34;
+
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
 
   h3 {
     font-weight: 700;
@@ -30,6 +38,40 @@
 
   .bad {
     background-color: #D03047;
+  }
+
+  .app-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 0 20px;
+
+    .info-cell {
+      box-sizing: border-box;
+      border: 1px solid #DCDAEB;
+      border-radius: 15px;
+      padding: 16px;
+    }
+
+    & > .header-cell {
+      padding: 20px 0;
+    }
+
+    .condition-grid {
+      display: grid;
+      grid-gap: 20px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .competition-grid {
+      display: grid;
+      grid-gap: 20px 0;
+    }
   }
 }
 

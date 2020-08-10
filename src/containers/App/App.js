@@ -21,6 +21,17 @@ class App extends Component {
         ],
       },
       {
+        name: 'Анаэробные',
+        quality: 'normal',
+        value: 4,
+        total: 5,
+        parameters: [
+          {name: 'Пиковая мощность', value: '286 Вт/кг', quality: 'bad'},
+          {name: 'Анаэробная мощность', value: '286 Вт/кг', quality: 'good'},
+          {name: 'Анаэробная емкость', value: '92', quality: 'good'},
+        ],
+      },
+      {
         name: 'Скоростно-силовые',
         quality: 'good',
         value: 5,
@@ -30,6 +41,18 @@ class App extends Component {
           {name: 'Ускорение', value: '39', quality: 'bad'},
           {name: 'Линейная скорость', value: '75', quality: 'good'},
           {name: 'Упругость', value: '65', quality: 'normal'},
+        ],
+      },
+      {
+        name: 'Силовые',
+        quality: 'good',
+        value: 5,
+        total: 5,
+        parameters: [
+          {name: 'Сила рук – кисть', value: '35/33 кг', quality: 'good'},
+          {name: 'Сила ног – Сгибание колена', value: '1.13 Нм/кг', quality: 'good'},
+          {name: 'Сила ног – Разгибание колена', value: '1.13 Вт/кг', quality: 'good'},
+          {name: 'Становая тяга', value: '145 кг', quality: 'good'},
         ],
       },
       {
@@ -44,29 +67,6 @@ class App extends Component {
           {name: 'Нервно-мышечное согласование', value: '49', quality: 'normal'},
           {name: 'Тремор рук', value: '78', quality: 'normal'},
           {name: 'Антиципация', value: '62', quality: 'normal'},
-        ],
-      },
-      {
-        name: 'Анаэробные',
-        quality: 'normal',
-        value: 4,
-        total: 5,
-        parameters: [
-          {name: 'Пиковая мощность', value: '286 Вт/кг', quality: 'bad'},
-          {name: 'Анаэробная мощность', value: '286 Вт/кг', quality: 'good'},
-          {name: 'Анаэробная емкость', value: '92', quality: 'good'},
-        ],
-      },
-      {
-        name: 'Силовые',
-        quality: 'good',
-        value: 5,
-        total: 5,
-        parameters: [
-          {name: 'Сила рук – кисть', value: '35/33 кг', quality: 'good'},
-          {name: 'Сила ног – Сгибание колена', value: '1.13 Нм/кг', quality: 'good'},
-          {name: 'Сила ног – Разгибание колена', value: '1.13 Вт/кг', quality: 'good'},
-          {name: 'Становая тяга', value: '145 кг', quality: 'good'},
         ],
       },
       {
@@ -88,21 +88,37 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        {
-          stats.map((current, i) => {
-            return (
-              <div key={i} className='card'>
-                <StatsCard
-                  name={stats[i].name}
-                  value={stats[i].value}
-                  total={stats[i].total}
-                  quality={stats[i].quality}
-                  parameters={stats[i].parameters}
-                />
-              </div>
-            )
-          })
-        }
+        <div className='app-grid'>
+          <div className='header-cell'><h2>Текущее состояние</h2></div>
+          <div className='header-cell'><h2>Показатели подготовленности</h2></div>
+          <div className='header-cell'><h2>Соревнования</h2></div>
+          <div className='condition-grid'>
+            <div className='info-cell'>2</div>
+            <div className='info-cell'>2</div>
+            <div className='info-cell'>2</div>
+          </div>
+          <div className='stats-grid info-cell'>
+            {
+              stats.map((current, i) => {
+                return (
+                  <div key={i} className='card'>
+                    <StatsCard
+                      name={stats[i].name}
+                      value={stats[i].value}
+                      total={stats[i].total}
+                      quality={stats[i].quality}
+                      parameters={stats[i].parameters}
+                    />
+                  </div>
+                )
+              })
+            }
+          </div>
+          <div className='competition-grid'>
+            <div className='info-cell'>3</div>
+            <div className='info-cell'>3</div>
+          </div>
+        </div>
       </div>
     );
   }
