@@ -3,6 +3,34 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
+
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 10px;
+  }
+
+  .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #B4B3BD;
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  .good {
+    background-color: #43C79F;
+  }
+
+  .normal {
+    background-color: #FFAF02;
+  }
+
+  .bad {
+    background-color: #D03047;
+  }
 }
 
 @font-face {
