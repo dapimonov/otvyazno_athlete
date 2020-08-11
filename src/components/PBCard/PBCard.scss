@@ -1,0 +1,26 @@
+@import "src/containers/App/App.scss";
+
+.pb-card-component {
+  .pb-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 16px 0 0;
+
+    &:first-of-type {
+      margin-top: 24px;
+    }
+
+    span {
+      &:not(:first-of-type)::before {
+        content: '·';
+        margin: 0 8px;
+      }
+    }
+
+    hr {
+      margin: 16px (-$info-cell-padding) 0;
+      border: 1px solid #DCDAEB;
+    }
+  }
+}

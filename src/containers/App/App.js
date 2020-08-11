@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import StatsCard from "../../components/StatsCard/StatsCard";
 import RecoveryCard from "../../components/RecoveryCard/RecoveryCard";
 import RisksCard from "../../components/RisksCard/RisksCard";
+import PBCard from "../../components/PBCard/PBCard";
 
 
 class App extends Component {
@@ -98,6 +99,13 @@ class App extends Component {
       {name: 'Двигательные', value: 26},
       {name: 'Функциональные', value: 100},
     ];
+    const pbs = [
+      {discipline: 'Бег 100 м', result: '9.97', event: 'Чемпионат мира Доха 2019'},
+      {discipline: 'Бег 30 м', result: '2.97', event: 'Чемпионат мира Доха 2019'},
+      {discipline: 'Бег 300 м', result: '39.55', event: 'Чемпионат мира Сочи 2018'},
+      {discipline: 'Бег 21.1 км', result: '59:37', event: 'Омский марафон 2018'},
+      {discipline: 'Бег 42.2 км', result: '2:09:02', event: 'Саратовский марафон 2015'},
+    ];
 
     return (
       <div className="App">
@@ -140,7 +148,11 @@ class App extends Component {
           </div>
           <div className='competition-grid'>
             <div className='info-cell'>3</div>
-            <div className='info-cell'>3</div>
+            <div className='info-cell'>
+              <PBCard
+                results={pbs}
+              />
+            </div>
           </div>
         </div>
       </div>
