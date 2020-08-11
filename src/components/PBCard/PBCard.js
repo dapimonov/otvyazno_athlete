@@ -16,7 +16,7 @@ class PBCard extends Component {
                 <span className='grey-item'>{current.discipline}</span>
                 <span className='grey-item'>{current.result}</span>
                 <span>{current.event}</span>
-                <hr/>
+                {i !== results.length-1 && <hr/>}
               </div>
             )
           })

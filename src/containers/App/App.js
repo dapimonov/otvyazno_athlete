@@ -5,6 +5,7 @@ import StatsCard from "../../components/StatsCard/StatsCard";
 import RecoveryCard from "../../components/RecoveryCard/RecoveryCard";
 import RisksCard from "../../components/RisksCard/RisksCard";
 import PBCard from "../../components/PBCard/PBCard";
+import CompetitionCard from "../../components/CompetitionCard/CompetitionCard";
 
 
 class App extends Component {
@@ -106,6 +107,13 @@ class App extends Component {
       {discipline: 'Бег 21.1 км', result: '59:37', event: 'Омский марафон 2018'},
       {discipline: 'Бег 42.2 км', result: '2:09:02', event: 'Саратовский марафон 2015'},
     ];
+    const competitions = [
+      {date: '20.02.2019', event: 'ЧМ Доха-2019', discipline: 'Спринт', place: 2, result: '140 points', isPB: false},
+      {date: '22.02.2019', event: 'ЧМ Доха-2019', discipline: 'Бег 42.2 км', place: 3, result: '02:12:25', isPB: false},
+      {date: '24.02.2019', event: 'ЧМ Доха-2019', discipline: 'Бег 100 м', place: 14, result: '11.98', isPB: false},
+      {date: '21.04.2019', event: 'ЧР Москва-2019', discipline: 'Спринт', place: 4, result: '179 points', isPB: true},
+      {date: '05.05.2019', event: 'ЧМ Омск-2019', discipline: 'Бег 100 м', place: 1, result: '9.97', isPB: false},
+    ];
 
     return (
       <div className="App">
@@ -147,7 +155,11 @@ class App extends Component {
             }
           </div>
           <div className='competition-grid'>
-            <div className='info-cell'>3</div>
+            <div className='info-cell'>
+              <CompetitionCard
+                results={competitions}
+              />
+            </div>
             <div className='info-cell'>
               <PBCard
                 results={pbs}
