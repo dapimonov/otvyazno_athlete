@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.scss';
 import Header from "../../components/Header/Header";
 import StatsCard from "../../components/StatsCard/StatsCard";
+import RecoveryCard from "../../components/RecoveryCard/RecoveryCard";
 
 
 class App extends Component {
@@ -84,6 +85,14 @@ class App extends Component {
         ],
       },
     ];
+    const recovery = {
+      morningHr: 35,
+      restHr: 45,
+      exerciseHr: 150,
+      recoveryIndex: 88,
+      restLevel: 29,
+      bioChemIndex: 62,
+    };
 
     return (
       <div className="App">
@@ -95,7 +104,11 @@ class App extends Component {
           <div className='condition-grid'>
             <div className='info-cell'>2</div>
             <div className='info-cell'>2</div>
-            <div className='info-cell'>2</div>
+            <div className='info-cell'>
+              <RecoveryCard
+                parameters={recovery}
+              />
+            </div>
           </div>
           <div className='stats-grid info-cell'>
             {

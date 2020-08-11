@@ -5,7 +5,7 @@ import withValueAnimation from "../../hocs/WithValueAnimationHOC";
 
 class Bar extends Component {
   render() {
-    const {color, total, renderValue} = this.props;
+    const {color, total, renderValue, numbers} = this.props;
 
     return (
       <div className='bar-component'>
@@ -19,7 +19,7 @@ class Bar extends Component {
           >
           </div>
         </div>
-        {this.props.numbers &&
+        {numbers &&
           <div className='numbers'>
             <div
               className='dynamic-numbers'

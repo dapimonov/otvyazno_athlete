@@ -1,0 +1,33 @@
+.recovery-card-component {
+  .parameter-name {
+    margin: 0 0 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  .numbers-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 44px 0;
+
+    .hr-name {
+      margin: 0;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .hr-value {
+      margin: 0 0 4px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
