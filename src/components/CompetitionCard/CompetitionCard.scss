@@ -33,6 +33,8 @@
 
   hr {
     margin: 16px (-$info-cell-padding) 0;
-    border: 1px solid #DCDAEB;
+    background-color: #DCDAEB;
+    border: none;
+    height: 1px;
   }
 }
