@@ -3,6 +3,7 @@ import './App.scss';
 import Header from "../../components/Header/Header";
 import StatsCard from "../../components/StatsCard/StatsCard";
 import RecoveryCard from "../../components/RecoveryCard/RecoveryCard";
+import RisksCard from "../../components/RisksCard/RisksCard";
 
 
 class App extends Component {
@@ -93,6 +94,10 @@ class App extends Component {
       restLevel: 29,
       bioChemIndex: 62,
     };
+    const risks = [
+      {name: 'Двигательные', value: 26},
+      {name: 'Функциональные', value: 100},
+    ];
 
     return (
       <div className="App">
@@ -102,8 +107,14 @@ class App extends Component {
           <div className='header-cell'><h2>Показатели подготовленности</h2></div>
           <div className='header-cell'><h2>Соревнования</h2></div>
           <div className='condition-grid'>
-            <div className='info-cell'>2</div>
-            <div className='info-cell'>2</div>
+            <div className='info-cell'>
+              ...
+            </div>
+            <div className='info-cell'>
+              <RisksCard
+                parameters={risks}
+              />
+            </div>
             <div className='info-cell'>
               <RecoveryCard
                 parameters={recovery}
