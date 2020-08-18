@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/otvyazno_athlete/static/css/main.a75fef76.chunk.css",
+    "main.js": "/otvyazno_athlete/static/js/main.d10ba35c.chunk.js",
+    "main.js.map": "/otvyazno_athlete/static/js/main.d10ba35c.chunk.js.map",
+    "runtime-main.js": "/otvyazno_athlete/static/js/runtime-main.4436c72e.js",
+    "runtime-main.js.map": "/otvyazno_athlete/static/js/runtime-main.4436c72e.js.map",
+    "static/js/2.3802c35c.chunk.js": "/otvyazno_athlete/static/js/2.3802c35c.chunk.js",
+    "static/js/2.3802c35c.chunk.js.map": "/otvyazno_athlete/static/js/2.3802c35c.chunk.js.map",
+    "index.html": "/otvyazno_athlete/index.html",
+    "precache-manifest.682ee41f6f4efdd4fa7ddb4431a74121.js": "/otvyazno_athlete/precache-manifest.682ee41f6f4efdd4fa7ddb4431a74121.js",
+    "service-worker.js": "/otvyazno_athlete/service-worker.js",
+    "static/css/main.a75fef76.chunk.css.map": "/otvyazno_athlete/static/css/main.a75fef76.chunk.css.map",
+    "static/js/2.3802c35c.chunk.js.LICENSE.txt": "/otvyazno_athlete/static/js/2.3802c35c.chunk.js.LICENSE.txt",
+    "static/media/CompetitionCard.scss": "/otvyazno_athlete/static/media/MuseoSansRegular.f30df4fe.eot",
+    "static/media/garanichev.png": "/otvyazno_athlete/static/media/garanichev.ca0c7be6.png",
+    "static/media/gazprom.3b537aa0.svg": "/otvyazno_athlete/static/media/gazprom.3b537aa0.svg",
+    "static/media/medal_first.7746f27b.svg": "/otvyazno_athlete/static/media/medal_first.7746f27b.svg",
+    "static/media/medal_pb.02c73e2f.svg": "/otvyazno_athlete/static/media/medal_pb.02c73e2f.svg",
+    "static/media/medal_second.1d2c5ba5.svg": "/otvyazno_athlete/static/media/medal_second.1d2c5ba5.svg",
+    "static/media/medal_third.0e09d618.svg": "/otvyazno_athlete/static/media/medal_third.0e09d618.svg",
+    "static/media/russia.dd9dee0b.svg": "/otvyazno_athlete/static/media/russia.dd9dee0b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4436c72e.js",
+    "static/js/2.3802c35c.chunk.js",
+    "static/css/main.a75fef76.chunk.css",
+    "static/js/main.d10ba35c.chunk.js"
+  ]
+}
