@@ -6,6 +6,7 @@ import RecoveryCard from "../../components/RecoveryCard/RecoveryCard";
 import RisksCard from "../../components/RisksCard/RisksCard";
 import PBCard from "../../components/PBCard/PBCard";
 import CompetitionCard from "../../components/CompetitionCard/CompetitionCard";
+import MassCard from "../../components/MassCard/MassCard";
 
 
 class App extends Component {
@@ -114,6 +115,11 @@ class App extends Component {
       {date: '21.04.2019', event: 'ЧР Москва-2019', discipline: 'Спринт', place: 4, result: '179 points', isPB: true},
       {date: '05.05.2019', event: 'ЧМ Омск-2019', discipline: 'Бег 100 м', place: 1, result: '9.97', isPB: false},
     ];
+    const masses = [
+      {value: 12.4, name: 'Жировая масса', color: '#1C6998'},
+      {value: 55.2, name: 'Мышечная масса', color: '#52B9E9'},
+      {value: 3.3, name: 'Прочая масса', color: '#304B62'},
+    ];
 
     return (
       <div className="App">
@@ -124,7 +130,9 @@ class App extends Component {
           <div className='header-cell'><h2>Соревнования</h2></div>
           <div className='condition-grid'>
             <div className='info-cell'>
-              ...
+              <MassCard
+                parameters={masses}
+              />
             </div>
             <div className='info-cell'>
               <RisksCard

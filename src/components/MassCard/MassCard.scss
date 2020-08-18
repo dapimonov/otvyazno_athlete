@@ -1,0 +1,27 @@
+.mass-card-component{
+  .info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+
+        & > span {
+          margin-left: 8px;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

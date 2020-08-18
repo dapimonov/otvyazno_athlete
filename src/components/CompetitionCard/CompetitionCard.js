@@ -16,8 +16,8 @@ class CompetitionCard extends Component {
         {
           results.map((current, i) => {
             return (
-              <>
-                <div key={i} className='competition-item'>
+              <div key={i}>
+                <div className='competition-item'>
                   <div className='numbers-wrapper'>
                     <p>
                       <span>{current.date}</span>
@@ -38,7 +38,7 @@ class CompetitionCard extends Component {
                   </div>
                 </div>
                 {i !== results.length-1 && <hr/>}
-              </>
+              </div>
             )
           })
         }
