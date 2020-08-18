@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import photo from '../../images/garanichev.png';
 import './App.scss';
 import Header from "../../components/Header/Header";
 import StatsCard from "../../components/StatsCard/StatsCard";
@@ -7,6 +8,7 @@ import RisksCard from "../../components/RisksCard/RisksCard";
 import PBCard from "../../components/PBCard/PBCard";
 import CompetitionCard from "../../components/CompetitionCard/CompetitionCard";
 import MassCard from "../../components/MassCard/MassCard";
+import Athlete from "../../components/Athlete/Athlete";
 
 
 class App extends Component {
@@ -120,10 +122,22 @@ class App extends Component {
       {value: 55.2, name: 'Мышечная масса', color: '#52B9E9'},
       {value: 3.3, name: 'Прочая масса', color: '#304B62'},
     ];
+    const athlete = {
+      name: 'Евгений Александрович',
+      secondName: 'Гараничев',
+      sport: 'Биатлон',
+      dateOfBirth: '13.02.1988',
+      height: '172 см',
+      weight: '70.9 кг',
+    };
 
     return (
       <div className="App">
         <Header/>
+        <Athlete
+          parameters={athlete}
+          photo={photo}
+        />
         <div className='app-grid'>
           <div className='header-cell'><h2>Текущее состояние</h2></div>
           <div className='header-cell'><h2>Показатели подготовленности</h2></div>

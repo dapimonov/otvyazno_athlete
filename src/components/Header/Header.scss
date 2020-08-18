@@ -1,3 +1,5 @@
+@import "src/containers/App/App.scss";
+
 .header-component {
   .top-header {
     display: flex;
@@ -18,7 +20,7 @@
   }
 
   hr {
-    margin: 0 0 2px;
+    margin: 0 (-$app-side-padding) 2px;
     border: 2px solid;
   }
 }
